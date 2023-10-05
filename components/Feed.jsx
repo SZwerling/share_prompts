@@ -13,7 +13,7 @@ const PromptCardList = ({data, handleTagClick}) => {
 const Feed = () => {
   const [searchText, setSearchText] = useState('')
   const [posts, setPosts] = useState([])
-  const handleSearchChange = (e) => {}
+  const handleSearchChange = () => {}
 
   useEffect(() => {
     const fetchPosts = async  () => {
@@ -31,7 +31,7 @@ const Feed = () => {
                type="text"
                placeholder="search for tag or username"
                value={searchText}
-               onChange={handleSearchChange}
+               onChange={(e) => setSearchText(e.target.value)}
                required
                className="search_input peer"
             />
