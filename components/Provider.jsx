@@ -10,3 +10,5 @@ const Provider = ({ children, session}) => {
 }
 
 export default Provider
+
+// Provider gets imported in root layout to wrap everything

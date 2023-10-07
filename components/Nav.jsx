@@ -7,10 +7,10 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
    const { data: session } = useSession();
-   //const isUserLoggedIn = true;
+   //useSession is a hook, we're renaming data to session
+   //which is an object {user: {email:, id:, image:, name: }, expires: someTime}
    const [providers, setProviders] = useState(null);
    const [toggleDropDown, setToggleDropDown] = useState(false);
-
 
    useEffect(() => {
       const callProviders = async () => {
