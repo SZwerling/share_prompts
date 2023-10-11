@@ -5,14 +5,14 @@ import { useRouter } from "next/navigation";
 import Profile from "@components/Profile";
 
 const MyProfile = () => {
-   const { data: session } = useSession();
+   const { data: session } = useSession(); // rename data to session
    const [posts, setPosts] = useState([]);
    const router = useRouter();
 
    useEffect(() => {
       const fetchPosts = async () => {
         const response = await fetch(`/api/users/${session?.user.id}/posts`);
-        const data = await response.json();
+        const data = await response.json(); //all posts from user stringified
   
         setPosts(data);
       };
