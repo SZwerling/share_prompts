@@ -67,7 +67,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
             onClick={() => handleTagClick && handleTagClick(post.tag)}
             className="font-inter text-sm blue_gradient cursor-pointer"
          >
-            {post.tag}
+            #{post.tag}
          </p>
 
          {/* if currently logged in user is the creator and if we're on the profile page */}

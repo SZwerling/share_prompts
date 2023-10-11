@@ -10,7 +10,7 @@ const EditPrompt = () => {
    const promptId = searchParams.get("id");
    const [post, setPost] = useState({
       prompt: "",
-      tag: "",
+      tag: "#",
    });
 
    useEffect(() => {

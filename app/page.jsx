@@ -10,12 +10,12 @@ const Home = () => {
             <br className="max-md:hidden"/>
             <span className="md:hidden">&nbsp;</span>
             <span className="orange_gradient text-center">
-               AI-Powered Prompts
+               Power Prompts
             </span>
          </h1>
          <p className="desc text-center">
-            Promptopia is an open-sourced AI prompting tool to discover, create
-            & share creative prompts
+            PromptShare is an AI prompting resource to discover, create
+            & share powerful prompts
          </p>
 
          <Feed />
